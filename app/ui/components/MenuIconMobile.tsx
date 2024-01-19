@@ -4,7 +4,7 @@ export function MenuIconMobile() {
 
     // JSX
     return (
-        <Link
+        <a
             href="#header-mobile-menu"
             className="hidden md:block text-white"
         >
@@ -13,7 +13,7 @@ export function MenuIconMobile() {
                 <path d="M21 12 3 12" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
                 <path d="M21 17 3 17" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
             </svg>
-        </Link>
+        </a>
     )
 }
 

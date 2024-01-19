@@ -16,7 +16,7 @@ export default function Header() {
                 />
                 <nav 
                     id="header-mobile-menu"
-                    className="md:fixed flex flex-row md:flex-col items-center justify-center gap-8 w-full md:h-dvh inset-0 md:bg-[#151a36]/90 text-xl md:text-2xl translate-y-[initial] md:-translate-y-full transition-transform duration-300 target:translate-y-0"
+                    className="md:fixed flex flex-row md:flex-col items-center justify-center gap-8 w-full md:h-screen inset-0 md:bg-[#151a36]/90 text-xl md:text-2xl translate-y-[initial] md:-translate-y-full transition-transform duration-300 target:translate-y-0"
                 >
                     <Link
                         href="/vota"

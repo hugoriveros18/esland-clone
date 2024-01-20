@@ -16,7 +16,7 @@ export default function Header() {
         const handleHeaderVisibility = () => {
             const scrollY = window.pageYOffset;
         
-            if(scrollY > 100) {
+            if(scrollY > 10) {
                 setIsHeaderVisible(true)
             } else {
                 setIsHeaderVisible(false)

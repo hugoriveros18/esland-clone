@@ -53,7 +53,7 @@ span {
 .header-nav {
   animation: bur linear both;
   animation-timeline: scroll();
-  animation-range: 0 400px;
+  animation-range: 0 500px;
 }
 
 @keyframes bur {

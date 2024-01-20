@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 export default function Header() {
     // STATES
-    const [isHeaderVisible, setIsHeaderVisible] = useState<boolean>(true);
+    const [isHeaderVisible, setIsHeaderVisible] = useState<boolean>(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
     // EFFECTS
@@ -38,7 +38,7 @@ export default function Header() {
                     svgClass="h-[52px] w-[40px]"
                 />
                 <nav
-                    className={`md:fixed flex flex-row md:flex-col items-center justify-center gap-8 w-full md:h-screen inset-0 md:bg-[#151a36]/90 text-xl md:text-2xl translate-y-[initial] md:-translate-y-full transition-transform duration-300 ${isMobileMenuOpen ? 'md:-translate-y-0' : undefined}`}
+                    className={`md:fixed flex flex-row md:flex-col items-center justify-center gap-8 w-full md:h-screen inset-0 md:bg-[#151a36]/90 text-xl md:text-2xl translate-y-[initial] transition-transform duration-300 ${isMobileMenuOpen ? 'md:-translate-y-0' : 'md:-translate-y-full'}`}
                 >
                     <Link
                         href="/vota"

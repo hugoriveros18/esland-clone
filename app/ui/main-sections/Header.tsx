@@ -4,8 +4,22 @@ import Link from "next/link";
 import EslandLogoSvg from "../components/EslandLogoSvg";
 import { MenuCloseIconMobile, MenuIconMobile } from "../components/MenuIconMobile";
 import { useEffect, useState } from "react";
+import LanguageSelection from "../components/LanguageSelection";
+import { useTranslations } from "next-intl";
 
-export default function Header() {
+type LanguagesConfigured = 'es' | 'en';
+
+interface HeaderProps {
+    locale: LanguagesConfigured
+}
+
+export default function Header({
+    locale
+}:HeaderProps) {
+    
+    // LANGUAGE
+    const t = useTranslations('Header');
+
     // STATES
     const [isHeaderVisible, setIsHeaderVisible] = useState<boolean>(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -44,27 +58,28 @@ export default function Header() {
                         href="/vota"
                         className="text__glowing text-white border-b-2 border-transparent"
                     >
-                        VOTA
+                        { t('VOTA') }
                     </Link>
                     <Link
                         href="/info"
                         className="text__glowing text-white border-b-2 border-transparent"
                     >
-                        INFO
+                        { t('INFO') }
                     </Link>
                     <Link
                         href="/archivo"
                         className="text__glowing text-white border-b-2 border-transparent"
                     >
-                        ARCHIVO
+                        { t('ARCHIVO') }
                     </Link>
+                    <LanguageSelection locale={locale} />
                     <Link
                         href="https://drive.google.com/file/d/1D7IvIqMyqAoG58fuk8bc0JvhAmrWBbOK/view"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="initialButton w-fit ml-auto md:ml-0 text-white text-base font-medium no-underline px-5 py-2 md:py-3 border border-solid border-white rounded-full uppercase"
                     >
-                        CRITERIOS DE NOMINACIÓN
+                        { t('CRITERIOS_NOMINACION') }
                     </Link>
                     <MenuCloseIconMobile
                         setIsMobileMenuOpen={setIsMobileMenuOpen}

@@ -2,10 +2,14 @@ import { jura } from "../fonts/fonts";
 import Link from "next/link";
 import EslandLogoSvg from "../components/EslandLogoSvg";
 import localFont from 'next/font/local';
+import { useTranslations } from 'next-intl';
 
 const tommaso = localFont({ src: './../fonts/tomaso.woff2' })
 
 export default function WelcomeScreen() {
+
+  // LANGUAGE
+  const t = useTranslations('WelcomeScreen');
 
   // JSX
   return (
@@ -22,13 +26,13 @@ export default function WelcomeScreen() {
             <span className="leading-none">D</span>
           </h1>
           <p className={`subtitle text-2xl lg:text-xl text-center text-wrap text-[#ffffffe6] px-4 mt-2 ${jura.className}`}>
-            Premios a la Comunidad Hispanohablante de Streaming 
+            {t('WELCOME_SCREEN__DESCRIPTION')}
           </p>
           <Link
             href="/vota"
             className="initialButton w-fit text-2xl lg:text-base font-medium no-underline px-5 py-3 border border-solid border-white rounded-full uppercase text-blue-950 animate-fade-up bg-white"
           >
-            VOTA
+            {t('VOTE_BUTTON')}
           </Link>
         </section>
         <video 

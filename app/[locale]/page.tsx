@@ -1,7 +1,7 @@
-import BentoGrid from "./ui/main-sections/BentoGrid"
-import EslandGuide from "./ui/main-sections/EslandGuide"
-import WelcomeScreen from "./ui/main-sections/WelcomeScreen"
-import WelcomeText from "./ui/main-sections/WelcomeText"
+import BentoGrid from "../ui/main-sections/BentoGrid"
+import EslandGuide from "../ui/main-sections/EslandGuide"
+import WelcomeScreen from "../ui/main-sections/WelcomeScreen"
+import WelcomeText from "../ui/main-sections/WelcomeText"
 
 export default function Home() {
   return (

@@ -16,11 +16,11 @@ export default function WelcomeText() {
       </div>
       <h1 
         className="text-4xl font-semibold text-center text-wrap text-white mx-auto mb-10 tracking-wide"
-        dangerouslySetInnerHTML={{ __html: t.raw('TITLE') }}
+        dangerouslySetInnerHTML={{ __html: t.raw('titulo') }}
       />
-      <p dangerouslySetInnerHTML={{ __html: t.raw('FIRST_PARAGRAPH') }}/>
-      <p dangerouslySetInnerHTML={{ __html: t.raw('SECOND_PARAGRAPH') }}/>
-      <p dangerouslySetInnerHTML={{ __html: t.raw('THIRD_PARAGRAPH') }}/>
+      <p dangerouslySetInnerHTML={{ __html: t.raw('parrafoUno') }}/>
+      <p dangerouslySetInnerHTML={{ __html: t.raw('parrafoDos') }}/>
+      <p dangerouslySetInnerHTML={{ __html: t.raw('parrafoTres') }}/>
     </section>
   );
 }

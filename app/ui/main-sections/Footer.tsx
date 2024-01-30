@@ -2,9 +2,13 @@ import Link from "next/link";
 import EslandLogoSvg from "../components/EslandLogoSvg";
 import { GithubIcon, InstagramIcon, RedditIcon, TwitterIcon } from "../components/SocialMediaIcons";
 import FooterMenu from "../components/FooterMenu";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function Footer() {
+
+    // LANGUAGE
+    const t = useTranslations('Footer');
 
     // JSX
     return (
@@ -13,7 +17,7 @@ export default function Footer() {
                 <div className="flex justify-between sm:flex-col sm:gap-3">
                     <div className="flex flex-col b-0 md:mb-6">
                         <Link
-                            href="/"
+                            href={t('mapaWeb.inicio.slug')}
                             className="-mt-14 sm:-mt-9 flex items-center justify-center"
                         >
                             <EslandLogoSvg 
@@ -28,42 +32,42 @@ export default function Footer() {
                     </div>
                     <div className="grid grid-cols-3 gap-8 sm:gap-6">
                         <FooterMenu
-                            title="LEGAL"
+                            title={t('legal.title')}
                             items={[
                                 {
-                                    title: "Aviso Legal",
-                                    slug:"/aviso-legal"
+                                    title: t('legal.avisoLegal.texto'),
+                                    slug: t('legal.avisoLegal.slug')
                                 },
                                 {
-                                    title: "Privacidad",
-                                    slug:"/privacidad"
+                                    title: t('legal.privacidad.texto'),
+                                    slug: t('legal.privacidad.slug')
                                 },
                                 {
-                                    title: "Cookies",
-                                    slug:"/cookies"
+                                    title: t('legal.cookies.texto'),
+                                    slug: t('legal.cookies.slug')
                                 }
                             ]}
                         />
                         <FooterMenu
-                            title="MAPA WEB"
+                            title={t('mapaWeb.title')}
                             items={[
                                 {
-                                    title: "Inicio",
-                                    slug:"/"
+                                    title: t('mapaWeb.inicio.texto'),
+                                    slug: t('mapaWeb.inicio.slug')
                                 },
                                 {
-                                    title: "Info",
-                                    slug:"/info"
+                                    title: t('mapaWeb.informacion.texto'),
+                                    slug: t('mapaWeb.informacion.slug')
                                 },
                                 {
-                                    title: "Archivo",
-                                    slug:"/archivo"
+                                    title: t('mapaWeb.archivo.texto'),
+                                    slug: t('mapaWeb.archivo.slug')
                                 }
                             ]}
                         />
                         <div>
                             <h2 className="mb-0 text-sm font-semibold uppercase text-white">
-                                PRODUCIDO POR
+                                {t('producidoPor.title')}
                             </h2>
                             <Link
                                 href="https://www.ubiq.ad/"
@@ -84,8 +88,7 @@ export default function Footer() {
                 <hr className="my-8 lg:my-6 border-white/10 mx-auto" />
                 <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-400 text-center sm:text-start">
-
-                        © ESLAND 2021 - 2024 Todos los derechos reservados. - Pagina web desarrollada para fines educativos 
+                        {t('derechos.title')}
                     </span>
                     <GithubIcon />
                 </div>

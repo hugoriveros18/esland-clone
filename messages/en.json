@@ -1,48 +1,83 @@
 {
     "Header": {
-        "VOTA": "VOTE",
-        "INFO": "INFO",
-        "ARCHIVO": "FILE",
-        "CRITERIOS_NOMINACION": "NOMINATION CRITERIA"
+        "vota": {
+            "texto": "VOTE",
+            "slug": "/en/vote" 
+        },
+        "info": {
+            "texto": "INFO",
+            "slug": "/en/info" 
+        },
+        "archivo": {
+            "texto": "FILE",
+            "slug": "/en/file" 
+        },
+        "criteriosNominacion": {
+            "texto": "NOMINATION CRITERIA",
+            "slug": "https://drive.google.com/file/d/1D7IvIqMyqAoG58fuk8bc0JvhAmrWBbOK/view" 
+        }
     },
     "WelcomeScreen": {
-        "WELCOME_SCREEN__DESCRIPTION": "Streaming Community Awards for Spanish Speakers",
-        "VOTE_BUTTON": "VOTE"
+        "descripcion": "Streaming Community Awards for Spanish Speakers",
+        "boton": "VOTE"
     },
     "WelcomeText": {
-        "TITLE": "Welcome<br/> to the ESLAND Awards",
-        "FIRST_PARAGRAPH": "While the film industry has the Oscars and the music industry has the Grammys, <strong>streaming has the ESLAND Awards</strong>. These awards celebrate the creativity and talent of the best content creators in <strong>the Spanish-speaking community</strong>.",
-        "SECOND_PARAGRAPH": "Spain, Latin America, and Andorra come together for creators and their communities, to reminisce and relive <strong>some of the best moments of the year</strong>.",
-        "THIRD_PARAGRAPH": "After two successful ceremonies, one at the Palau de la Música Catalana in Barcelona, and another at the National Auditorium in Mexico City, we eagerly await <strong>the third edition in Andorra</strong>."
+        "titulo": "Welcome<br/> to the ESLAND Awards",
+        "parrafoUno": "While the film industry has the Oscars and the music industry has the Grammys, <strong>streaming has the ESLAND Awards</strong>. These awards celebrate the creativity and talent of the best content creators in <strong>the Spanish-speaking community</strong>.",
+        "parrafoDos": "Spain, Latin America, and Andorra come together for creators and their communities, to reminisce and relive <strong>some of the best moments of the year</strong>.",
+        "parrafoTres": "After two successful ceremonies, one at the Palau de la Música Catalana in Barcelona, and another at the National Auditorium in Mexico City, we eagerly await <strong>the third edition in Andorra</strong>."
     },
-    "BentoGrid": {
-        "ANDORRA": {
-            "title": "Andorra: The Zenith of the ESLAND Awards",
-            "subtitle": "",
-            "description": "A new edition <strong>packed with novelties and content</strong>, kicking off several weeks before the highly anticipated ceremony. <strong>Special live streams, collaborations, concerts, and much more</strong> will make it a true celebration dedicated to content creation.",
-            "gridClass": "col-span-4 xl:col-span-5 sm:col-span-10",
-            "backgroundImage": "/img/mountain.webp"
+    "EslandGuide": {
+        "titulo": "GUIDE TO THE 3RD EDITION OF THE ESLAND AWARDS"
+    },
+    "Footer": {
+        "legal": {
+            "title": "LEGAL",
+            "avisoLegal": {
+                "texto": "Legal Notice",
+                "slug": "/en/legal-notice"
+            },
+            "privacidad": {
+                "texto": "Privacy",
+                "slug": "/en/privacy"
+            },
+            "cookies": {
+                "texto": "Cookies",
+                "slug": "/en/cookies"
+            }
         },
-        "ALFOMBRA": {
-            "title": "The White Carpet",
-            "subtitle": "February 16, 2024",
-            "description": "This year, the blue carpet moment will be replaced and enhanced by the stunning landscapes of Andorra, featuring a <strong>white carpet in the snow</strong> situated on the <strong>ski slopes of Andorra</strong>.",
-            "gridClass": "col-span-6 xl:col-span-5 sm:col-span-10",
-            "backgroundImage": "/img/pistas.webp"
+        "mapaWeb": {
+            "title": "SITE MAP",
+            "inicio": {
+                "texto": "Home",
+                "slug": "/en"
+            },
+            "informacion": {
+                "texto": "Information",
+                "slug": "/en/info"
+            },
+            "archivo": {
+                "texto": "Archive",
+                "slug": "/en/archive"
+            }
         },
-        "GALA": {
-            "title": "THE GALA",
-            "subtitle": "February 17, 2024",
-            "description": "An awards gala filled with <strong>top-notch content</strong> and <strong>many surprises</strong>, where the winners of this third edition of the ESLAND Awards will be revealed.",
-            "gridClass": "col-span-6 xl:col-span-5 sm:col-span-10",
-            "backgroundImage": "/img/grefg.webp"
+        "producidoPor": {
+            "title": "PRODUCED BY"
         },
-        "REDDIT": {
-            "title": "ENJOY THE COMMUNITY'S REDDIT",
-            "subtitle": "",
-            "description": "This year, Reddit will not be part of the award voting, but it will <strong>be part of the community</strong>. The official ESLAND Awards subreddit is open for you to share your clips, opinions, and to <strong>interact with the entire Spanish-speaking streaming community</strong>.",
-            "gridClass": "col-span-4 xl:col-span-5 sm:col-span-10",
-            "backgroundImage": "/img/laptop.webp"
+        "derechos": {
+            "title": "© ESLAND 2021 - 2024 All rights reserved. - Website developed for educational purposes."
         }
+    },
+    "Vota": {
+        "titulo": "THE VOTING IS OPEN",
+        "boton": "START VOTING NOW!",
+        "descripcion": "The most crucial moment has arrived. <strong>Cast your vote in the 3rd Edition of the Awards</strong>. Here are some tips to ensure your votes are counted correctly:",
+        "itemUno": "Vote, <strong>in order of preference</strong>, for up to 4 nominees per category.",
+        "itemDos": "<strong>Voting in every category is not mandatory.</strong>",
+        "itemTres": "While not mandatory, <strong>using ranked voting</strong> is recommended.",
+        "itemCuatro": "Once you've made your choice, <strong>be sure to click “submit my votes”</strong>.",
+        "itemCinco": "<strong>Remember to share your votes</strong> on social media.",
+        "itemSeis": "Choose wisely and <strong>review your votes</strong>; you only get one chance.",
+        "footer": "Voting will be open until Sunday, January 14th at 12:00 AM (Spanish time)"
     }
 }

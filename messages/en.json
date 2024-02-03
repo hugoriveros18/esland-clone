@@ -9,8 +9,8 @@
             "slug": "/en/info" 
         },
         "archivo": {
-            "texto": "FILE",
-            "slug": "/en/file" 
+            "texto": "ARCHIVE",
+            "slug": "/en/archive" 
         },
         "criteriosNominacion": {
             "texto": "NOMINATION CRITERIA",
@@ -19,7 +19,8 @@
     },
     "WelcomeScreen": {
         "descripcion": "Streaming Community Awards for Spanish Speakers",
-        "boton": "VOTE"
+        "boton": "VOTE",
+        "slug": "/en/vote"
     },
     "WelcomeText": {
         "titulo": "Welcome<br/> to the ESLAND Awards",

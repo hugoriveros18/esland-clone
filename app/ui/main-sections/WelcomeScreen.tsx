@@ -29,7 +29,7 @@ export default function WelcomeScreen() {
             {t('descripcion')}
           </p>
           <Link
-            href="/vota"
+            href={t('slug')}
             className="initialButton w-fit text-2xl lg:text-base font-medium no-underline px-5 py-3 border border-solid border-white rounded-full uppercase text-blue-950 animate-fade-up bg-white"
           >
             {t('boton')}

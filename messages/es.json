@@ -19,7 +19,8 @@
     },
     "WelcomeScreen": {
         "descripcion": "Premios a la Comunidad Hispanohablante de Streaming",
-        "boton": "VOTA"
+        "boton": "VOTA",
+        "slug": "/es/vota"
     },
     "WelcomeText": {
         "titulo": "Bienvenidos/as<br/> a los Premios ESLAND",
@@ -79,5 +80,11 @@
         "itemCinco": "<strong>Recuerda compartir tus votos</strong> en redes sociales.",
         "itemSeis": "Elige sabiamente y <strong>revisa tus votos</strong>, solo tienes una oportunidad.",
         "footer": "Las votaciones estarán abiertas hasta el domingo 14 de enero a las 24:00h (hora española)"
+    },
+    "Archivo": {
+        "mainScreen": {
+            "title": "",
+            "boton": ""
+        }
     }
 }

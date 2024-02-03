@@ -79,6 +79,10 @@ span {
   }
 }
 
+.progressive__number {
+  text-shadow: 0 0 10px rgba(197,225,255,.5);
+}
+
 .yt-lite {
   background-color: #000;
   position: relative;
@@ -156,5 +160,44 @@ span {
 .yt-lite.lyt-activated > .lty-playbtn {
   opacity: 0;
   pointer-events: none;
+}
+
+/* .pswp__img {
+  width: 100% !important;
+  height: auto !important;
+} */
+
+.galleryTabSelected {
+  box-shadow: 3px -6px 5px #1a1a1a33;
+}
+
+.categoryButton:hover {
+  box-shadow: 0 0 10px 5px #3e9fff;
+}
+
+.cardAnimation {
+  animation: button-in-out 1s;
+}
+
+@keyframes button-in-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+  
+  45% {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(-3deg);
+  }
+  
+  55% {
+    opacity: 0;
+    transform: translate(50px, 0) rotate(3deg);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
 }
 

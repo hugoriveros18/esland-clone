@@ -70,18 +70,21 @@ export default function Header({
                     <Link
                         href={t('vota.slug')}
                         className={`text__glowing text-white border-b-2 border-transparent ${currentPathSelection == t('vota.texto').toLocaleLowerCase() ? 'border-white' : undefined}`}
+                        onClick={() => setIsMobileMenuOpen(false)}
                     >
                         { t('vota.texto') }
                     </Link>
                     <Link
                         href={t('info.slug')}
                         className={`text__glowing text-white border-b-2 border-transparent ${currentPathSelection == t('info.texto').toLocaleLowerCase() ? 'border-white' : undefined}`}
+                        onClick={() => setIsMobileMenuOpen(false)}
                     >
                         { t('info.texto') }
                     </Link>
                     <Link
                         href={t('archivo.slug')}
                         className={`text__glowing text-white border-b-2 border-transparent ${currentPathSelection == t('archivo.texto').toLocaleLowerCase() ? 'border-white' : undefined}`}
+                        onClick={() => setIsMobileMenuOpen(false)}
                     >
                         { t('archivo.texto') }
                     </Link>
@@ -94,6 +97,7 @@ export default function Header({
                         target="_blank"
                         rel="noopener noreferrer"
                         className="initialButton w-fit ml-auto md:ml-0 text-white text-base font-medium no-underline px-5 py-2 md:py-3 border border-solid border-white rounded-full uppercase"
+                        onClick={() => setIsMobileMenuOpen(false)}
                     >
                         { t('criteriosNominacion.texto') }
                     </Link>

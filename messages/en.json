@@ -80,5 +80,27 @@
         "itemCinco": "<strong>Remember to share your votes</strong> on social media.",
         "itemSeis": "Choose wisely and <strong>review your votes</strong>; you only get one chance.",
         "footer": "Voting will be open until Sunday, January 14th at 12:00 AM (Spanish time)"
+    },
+    "Archivo": {
+        "startScreen": {
+            "title": "PAST EDITIONS",
+            "boton": "EXPERIENCE THE LAST GALA"
+        },
+        "palmares": {
+            "boton1": "First Edition",
+            "boton2": "Second Edition"
+        },
+        "galeria": {
+            "title": "GALLERY",
+            "description": "Capture some of the gala's most memorable moments that will go down in history.",
+            "botonOpen": "DISCOVER THEM ALL",
+            "botonClose": "SHOW LESS"
+        },
+        "estadisticas": {
+            "title": "The ESLANDs by the numbers",
+            "visualizaciones": "VIEWS",
+            "prensa": "ARTICLES IN THE PRESS",
+            "medios": "EARNED IN MEDIA COVERAGE"
+        }
     }
 }

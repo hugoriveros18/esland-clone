@@ -5,10 +5,14 @@ import React, { useEffect, useState } from 'react';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import gallerySize from './../utils/meta-gallery.json';
 import 'photoswipe/style.css';
+import { useTranslations } from 'next-intl';
 
 export default function ArchiveGallery({
     edition
 }:GallerySectionProps) {
+
+    // LANGUAGE
+    const t = useTranslations('Archivo');
 
     // STATES
     const [isFullListActive, setIsFullListActive] = useState<boolean>(false);
@@ -77,7 +81,7 @@ export default function ArchiveGallery({
                     className="initialButton mx-auto text-white text-base font-medium no-underline px-5 py-2 md:py-3 border border-solid border-white rounded-full cursor-pointer"
                     onClick={() => setIsFullListActive(state => !state)}
                 >
-                    {isFullListActive ? 'VER MENOS' : 'DESCÚBRELAS TODAS'}
+                    {isFullListActive ? t('galeria.botonClose') : t('galeria.botonOpen')}
                 </div>
             </div>
         </>

@@ -54,7 +54,7 @@ export default function Palmares({
                             return (
                                 <button
                                     key={ctg.categoria}
-                                    className={`flex justify-between items-center w-[300px] lg:w-auto sm:max-w-full rounded-sm categoryButton bg-gradient-to-r ${index % 2 === 0 ? 'from-blue-600 to-sky-400/45 text-center' : 'from-gray-700 to-blue-900'}  hover:bg-blue-900 sm:hover:bg-transparent px-4 py-1`}
+                                    className={`flex justify-between items-center w-[300px] lg:w-auto sm:max-w-full rounded-sm categoryButton bg-gradient-to-r ${index % 2 === 0 ? 'from-blue-600 to-sky-400/45 text-center' : 'from-gray-700 to-blue-900'} ${ctg === activeTab ? 'border border-sky-300 border-spacing-6' : undefined} hover:bg-blue-900 sm:hover:bg-transparent px-4 py-1`}
                                     onClick={() => handleTabChange(ctg)}
                                 >
                                     <h1 className='text-sm text-left text-white'>

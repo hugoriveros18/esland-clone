@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-// import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import ProgressiveNumber from '@/app/ui/components/ProgressiveNumber';
 import ArchiveContent from '@/app/ui/main-sections/ArchiveContent';
 import localFont from 'next/font/local';
@@ -10,7 +10,7 @@ const tommaso = localFont({ src: './../../ui/fonts/tomaso.woff2' });
 export default function Archivo() {
 
     // LANGUAGE
-    // const t = useTranslations('Header');
+    const t = useTranslations('Archivo');
 
     // JSX
     return (
@@ -19,7 +19,7 @@ export default function Archivo() {
             <div className="bg-no-repeat bg-cover relative h-[90vh] w-full max-w-[100vw]">
                 <div className="absolute inset-0 m-auto w-full h-full flex justify-center flex-col items-center">
                     <h1 className={`text-white text-6xl lg:text-4xl sm:text-2xl text-center mb-20 sm:mb-10 tracking-widest ${tommaso.className}`}>
-                        EDICIONES ANTERIORES
+                        {t('startScreen.title')}
                     </h1>
                     <Link
                         href="https://www.youtube.com/watch?v=1YmpPrqKP-g"
@@ -27,7 +27,7 @@ export default function Archivo() {
                         rel='noopener noreferrer'
                         className='initialButton w-fit text-2xl lg:text-base font-medium no-underline px-5 py-3 border border-solid border-white rounded-full uppercase text-white'
                     >
-                        REVIVE LA ÚLTIMA GALA
+                        {t('startScreen.boton')}
                     </Link>
                 </div>
                 <img
@@ -49,26 +49,26 @@ export default function Archivo() {
             {/* ESTADISTICAS */}
             <section className='max-w-6xl mx-auto py-20 lg:py-15 sm:py-10 px-20 lg:px-10 sm:px-6'>
                 <h2 className={`text-6xl lg:text-4xl text-white ${tommaso.className} text-center text-balance mb-20 lg:mb-10`}>
-                    Los ESLAND en números
+                    {t('estadisticas.title')}
                 </h2>
                 <div className='grid grid-cols-3 md:grid-cols-1 gap-y-10'>
                     <ProgressiveNumber
                         initial={0}
                         final={69.9}
                         decimals={1}
-                        texto='DE VISUALIZACIONES'
+                        texto={t('estadisticas.visualizaciones')}
                         simbolo='M'
                         />
                     <ProgressiveNumber
                         initial={0}
                         final={227}
-                        texto='NOTICIAS EN PRENSA'
+                        texto={t('estadisticas.prensa')}
                         />
                     <ProgressiveNumber
                         initial={0}
                         final={3.2}
                         decimals={1}
-                        texto='EN MEDIOS GANADOS'
+                        texto={t('estadisticas.medios')}
                         simbolo='M€'
                     />
                 </div>

@@ -82,9 +82,25 @@
         "footer": "Las votaciones estarán abiertas hasta el domingo 14 de enero a las 24:00h (hora española)"
     },
     "Archivo": {
-        "mainScreen": {
-            "title": "",
-            "boton": ""
+        "startScreen": {
+            "title": "EDICIONES ANTERIORES",
+            "boton": "REVIVE LA ULTIMA GALA"
+        },
+        "palmares": {
+            "boton1": "Primera edición",
+            "boton2": "Segunda edición"
+        },
+        "galeria": {
+            "title": "GALERÍA",
+            "description": "Algunos de los mejores momentos de la gala que pasarán a la historia.",
+            "botonOpen": "DESCÚBRELAS TODAS",
+            "botonClose": "VER MENOS"
+        },
+        "estadisticas": {
+            "title": "Los ESLAND en números",
+            "visualizaciones": "DE VISUALIZACIONES",
+            "prensa": "NOTICIAS EN PRENSA",
+            "medios": "EN MEDIOS GANADOS"
         }
     }
 }

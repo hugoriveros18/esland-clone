@@ -19,7 +19,7 @@ export default function LanguageSelection({
     // PATHNAME TRANSFORM
     const pathnameWithoutLanguage = pathname?.split('/').splice(2).join('/');
     // console.log('pathname', pathnameWithoutLanguage)
-
+ 
     // JSX
     return (
         <div className="relative group text-white rounded-md text-xs font-semibold bg-black/30 hover:bg-black/70 transition-all">

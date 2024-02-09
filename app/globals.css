@@ -6,6 +6,24 @@ html {
   background-color: #111e31;
 }
 
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ffffff4d;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+
 p {
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.4;
@@ -20,7 +38,8 @@ p strong {
   font-weight: 700;
 }
 
-span {
+span,
+h1 {
   color: #fff;
 }
 
@@ -54,6 +73,11 @@ span {
   animation: bur linear both;
   animation-timeline: scroll();
   animation-range: 0 500px;
+}
+
+.cp-v {
+  -webkit-clip-path: polygon(0 0,100% 0,100% 85%,50% 100%,50% 100%,0 85%);
+  clip-path: polygon(0 0,100% 0,100% 85%,50% 100%,50% 100%,0 85%);
 }
 
 @keyframes bur {

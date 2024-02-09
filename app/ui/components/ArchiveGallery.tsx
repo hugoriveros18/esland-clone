@@ -4,8 +4,8 @@
 import React, { useEffect, useState } from 'react';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import gallerySize from './../utils/meta-gallery.json';
-import 'photoswipe/style.css';
 import { useTranslations } from 'next-intl';
+import 'photoswipe/style.css';
 
 export default function ArchiveGallery({
     edition

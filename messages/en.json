@@ -102,5 +102,33 @@
             "prensa": "ARTICLES IN THE PRESS",
             "medios": "EARNED IN MEDIA COVERAGE"
         }
+    },
+    "Info": {
+        "mainTitle": "ESLAND AWARDS",
+        "teatro": {
+            "title": "Unique recognition for creators and communities",
+            "texto1": "The ESLAND Awards are a private initiative promoted by the famous streamer TheGrefg, aiming to support and recognize content creation in the Spanish-speaking sphere.",
+            "texto2": "ESLAND is an acronym for SPAIN, LATIN AMERICA, AND ANDORRA, three regions that share a common language that unites them beyond any physical or virtual borders."
+        },
+        "premio": {
+            "title": "THE CREATION AWARD",
+            "texto1": "The trophy presented to the winners at the ceremony is <strong>a representation of the letter 'A' divided into three fragments</strong> , assembled as a futuristic gadget that builds the narrative of the event.",
+            "texto2": "It's an artifact of unknown origin that provides <strong>tools and abilities for creation</strong>. It symbolizes the emancipation of talent through technology and the rise of content creators in the entertainment world."
+        },
+        "kitPrensa": {
+            "title": "PRESS KIT",
+            "logotipo": {
+                "title": "LOGO AND TROPHY",
+                "button": "DOWNLOAD NOW"
+            },
+            "fondos": {
+                "title": "WALLPAPERS",
+                "button": "DOWNLOAD NOW"
+            },
+            "prensa": {
+                "title": "PRESS RELEASE",
+                "button": "DOWNLOAD NOW"
+            }
+        }
     }
 }

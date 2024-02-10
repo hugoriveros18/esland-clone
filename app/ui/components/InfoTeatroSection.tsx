@@ -4,8 +4,12 @@
 import { motion } from "framer-motion"
 import { useRef } from "react"
 import useScrollAnimation from "../hooks/useScrollAnimation";
+import { useTranslations } from "next-intl";
 
 export default function InfoTeatroSection() {
+
+    // LANGUAGE
+    const t = useTranslations('Info');
 
     // REFERENCES
     const sectionRef = useRef<any>(null);
@@ -38,7 +42,7 @@ export default function InfoTeatroSection() {
                         translateX: translateText1
                     }}
                 >
-                    Un reconocimiento único para creadores, creadoras y comunidades
+                    {t('teatro.title')}
                 </motion.h1>
                 <motion.p 
                     className='text-white lg:text-base'
@@ -47,7 +51,7 @@ export default function InfoTeatroSection() {
                         translateX: translateText2
                     }}
                 >
-                    Los Premios ESLAND son una iniciativa privada promovida por el célebre streamer TheGrefg y buscan apoyar y reconocer la creación de contenido en el ámbito hispanohablante.
+                    {t('teatro.texto1')}
                 </motion.p>
                 <motion.p 
                     className='text-white lg:text-base'
@@ -56,7 +60,7 @@ export default function InfoTeatroSection() {
                         translateX: translateText3
                     }}
                 >
-                    ESLAND es el acrónimo de ESPAÑA, LATINOAMÉRICA Y ANDORRA, tres localizaciones geográficas que comparten el idioma que las une más allá de cualquier frontera, ya sea física o virtual.
+                    {t('teatro.texto2')}
                 </motion.p>
             </div>
             <motion.div 

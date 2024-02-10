@@ -225,3 +225,11 @@ h1 {
   }
 }
 
+.text__glowing {
+  transition: text-shadow .3s ease;
+}
+
+.text__glowing:hover {
+  text-shadow: 1px 1px 20px #fff;
+}
+

@@ -3,9 +3,13 @@
 
 import { motion } from "framer-motion"
 import { useRef } from "react"
+import { useTranslations } from "next-intl";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
 export default function InfoPremioSection() {
+
+    // LANGUAGE
+    const t = useTranslations('Info');
 
     // REFERENCES
     const sectionRef = useRef<any>(null);
@@ -54,7 +58,7 @@ export default function InfoPremioSection() {
                         translateX: translateText1
                     }}
                 >
-                    EL PREMIO A LA CREACIÓN
+                    {t('premio.title')}
                 </motion.h1>
                 <motion.p 
                     className='text-white lg:text-base'
@@ -62,18 +66,16 @@ export default function InfoPremioSection() {
                         opacity: opacityText2,
                         translateX: translateText2
                     }}
-                >
-                    El trofeo que se entrega a los ganadores y ganadoras en la ceremonia es <strong>una representación de la letra “A” dividida en tres fragmentos</strong> y ensambladas a modo de artilugio futurista sobre el que se construye la narrativa del evento.
-                </motion.p>
+                    dangerouslySetInnerHTML={{ __html: t.raw('premio.texto1') }}
+                />
                 <motion.p 
                     className='text-white lg:text-base'
                     style={{
                         opacity: opacityText3,
                         translateX: translateText3
                     }}
-                >
-                    Un artefacto de origen desconocido que dota de <strong>herramientas y habilidades para la creación.</strong> Una metáfora sobre la emancipación del talento gracias a la tecnología y la irrupción de los creadores de contenido en el mundo del entretenimiento.
-                </motion.p>
+                    dangerouslySetInnerHTML={{ __html: t.raw('premio.texto2') }}
+                />
             </div>
         </section>
     )

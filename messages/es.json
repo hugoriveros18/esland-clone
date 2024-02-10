@@ -102,5 +102,33 @@
             "prensa": "NOTICIAS EN PRENSA",
             "medios": "EN MEDIOS GANADOS"
         }
+    },
+    "Info": {
+        "mainTitle": "LOS PREMIOS ESLAND",
+        "teatro": {
+            "title": "Un reconocimiento único para creadores, creadoras y comunidades",
+            "texto1": "Los Premios ESLAND son una iniciativa privada promovida por el célebre streamer TheGrefg y buscan apoyar y reconocer la creación de contenido en el ámbito hispanohablante.",
+            "texto2": "ESLAND es el acrónimo de ESPAÑA, LATINOAMÉRICA Y ANDORRA, tres localizaciones geográficas que comparten el idioma que las une más allá de cualquier frontera, ya sea física o virtual."
+        },
+        "premio": {
+            "title": "EL PREMIO A LA CREACIÓN",
+            "texto1": "El trofeo que se entrega a los ganadores y ganadoras en la ceremonia es <strong>una representación de la letra “A” dividida en tres fragmentos</strong> y ensambladas a modo de artilugio futurista sobre el que se construye la narrativa del evento.",
+            "texto2": "Un artefacto de origen desconocido que dota de <strong>herramientas y habilidades para la creación</strong>. Una metáfora sobre la emancipación del talento gracias a la tecnología y la irrupción de los creadores de contenido en el mundo del entretenimiento."
+        },
+        "kitPrensa": {
+            "title": "KIT DE PRENSA",
+            "logotipo": {
+                "title": "LOGOTIPO Y TROFEO",
+                "button": "DESCARGAR"
+            },
+            "fondos": {
+                "title": "FONDOS DE PANTALLA",
+                "button": "DESCARGAR"
+            },
+            "prensa": {
+                "title": "NOTA DE PRENSA",
+                "button": "DESCARGAR"
+            }
+        }
     }
 }

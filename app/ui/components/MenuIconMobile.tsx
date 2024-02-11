@@ -12,7 +12,7 @@ export function MenuIconMobile({
     // JSX
     return (
         <button
-            className="hidden md:block text-white border-none bg-transparent"
+            className="hidden lg:block text-white border-none bg-transparent"
             onClick={() => setIsMobileMenuOpen(true)}
         >
             <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@ export function MenuCloseIconMobile({
     // JSX
     return (
         <button
-            className="hidden md:block text-white absolute top-6 right-6 border-none bg-transparent"
+            className="hidden lg:block text-white absolute top-6 right-6 border-none bg-transparent"
             onClick={() => setIsMobileMenuOpen(false)}
         >
             <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

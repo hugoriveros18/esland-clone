@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import LanguageSelection from "../components/LanguageSelection";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import { headerMenuRouteValidation } from "../utils/headerMenuRouteValidation";
 
 type LanguagesConfigured = 'es' | 'en';
 
@@ -65,25 +66,25 @@ export default function Header({
                     />
                 </Link>
                 <nav
-                    className={`md:fixed flex flex-row md:flex-col items-center justify-center gap-8 w-full md:h-screen inset-0 md:bg-[#151a36]/90 text-xl md:text-2xl translate-y-[initial] transition-transform duration-300 ${isMobileMenuOpen ? 'md:-translate-y-0' : 'md:-translate-y-full'}`}
+                    className={`lg:fixed flex flex-row lg:flex-col items-center justify-center gap-8 w-full lg:h-screen inset-0 lg:bg-[#151a36]/90 text-xl lg:text-2xl lg:z-[99] translate-y-[initial] transition-transform duration-300 ${isMobileMenuOpen ? 'lg:-translate-y-0' : 'lg:-translate-y-full'}`}
                 >
                     <Link
                         href={t('vota.slug')}
-                        className={`text__glowing text-white border-b-2 border-transparent ${currentPathSelection == t('vota.texto').toLocaleLowerCase() ? 'border-white' : undefined}`}
+                        className={`text__glowing text-white border-b-2 border-transparent ${headerMenuRouteValidation[currentPathSelection]?.includes(t('vota.texto').toLocaleLowerCase()) ? 'border-white' : undefined}`}
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
                         { t('vota.texto') }
                     </Link>
                     <Link
                         href={t('info.slug')}
-                        className={`text__glowing text-white border-b-2 border-transparent ${currentPathSelection == t('info.texto').toLocaleLowerCase() ? 'border-white' : undefined}`}
+                        className={`text__glowing text-white border-b-2 border-transparent ${headerMenuRouteValidation[currentPathSelection]?.includes(t('info.texto').toLocaleLowerCase()) ? 'border-white' : undefined}`}
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
                         { t('info.texto') }
                     </Link>
                     <Link
                         href={t('archivo.slug')}
-                        className={`text__glowing text-white border-b-2 border-transparent ${currentPathSelection == t('archivo.texto').toLocaleLowerCase() ? 'border-white' : undefined}`}
+                        className={`text__glowing text-white border-b-2 border-transparent ${headerMenuRouteValidation[currentPathSelection]?.includes(t('archivo.texto').toLocaleLowerCase()) ? 'border-white' : undefined}`}
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
                         { t('archivo.texto') }
@@ -96,7 +97,7 @@ export default function Header({
                         href={t('criteriosNominacion.slug')}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="initialButton w-fit ml-auto md:ml-0 text-white text-base font-medium no-underline px-5 py-2 md:py-3 border border-solid border-white rounded-full uppercase"
+                        className="initialButton w-fit ml-auto lg:ml-0 lg:mt-4 text-white text-base font-medium no-underline px-5 py-2 lg:py-3 border border-solid border-white rounded-full uppercase"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
                         { t('criteriosNominacion.texto') }

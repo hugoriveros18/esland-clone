@@ -51,13 +51,13 @@ export default function Info() {
                             title={t('kitPrensa.fondos.title')}
                             image='/img/fondos-de-pantalla.webp'
                             downloadLink='https://premiosesland.com/ESLAND_FONDOS.zip'
-                            downloadButtonText={t('kitPrensa.prensa.title')}
+                            downloadButtonText={t('kitPrensa.fondos.button')}
                         />
                         <KitPrensaItem
-                            title={t('kitPrensa.fondos.title')}
+                            title={t('kitPrensa.prensa.title')}
                             image='/img/nota-de-prensa.webp'
                             downloadLink='https://premiosesland.com/Nota%20Prensa-ESLAND.pdf'
-                            downloadButtonText={t('kitPrensa.prensa.title')}
+                            downloadButtonText={t('kitPrensa.prensa.button')}
                         />
                     </div>
                 </section>

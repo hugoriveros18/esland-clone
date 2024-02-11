@@ -51,7 +51,7 @@ export function GithubIcon() {
     // JSX
     return (
         <Link
-            href="https://www.reddit.com/r/premiosESLAND/"
+            href="https://github.com/hugoriveros18/esland-clone"
             target="_blank"
             className="text-gray-500 hover:text-white ms-5 duration-300"
         >

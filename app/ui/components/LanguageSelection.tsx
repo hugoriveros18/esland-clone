@@ -2,7 +2,6 @@
 
 import { Link } from "@/navigation";
 import { EnglishFlag, SpanishFlag } from "./LanguageFlags";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 import useScreenWidth from "../hooks/useScreenWidth";
 
@@ -20,7 +19,6 @@ export default function LanguageSelection({
 
     // PATHNAME TRANSFORM
     const pathnameWithoutLanguage = pathname?.split('/').splice(2).join('/');
-    // console.log('pathname', pathnameWithoutLanguage)
 
     // DEVICE
     const device = useScreenWidth();

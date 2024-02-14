@@ -39,7 +39,9 @@ p strong {
 }
 
 span,
-h1 {
+h1,
+td,
+th {
   color: #fff;
 }
 

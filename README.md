@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+    <img src="public/img/favicons/favicon-dark.svg" height="50px" width="auto" /> 
+    <h3>
+        The ESLAND Clone
+    </h3>
+    <p>Created for personal educational purposes.</p>
+</div>
+<div align="center">
+    <a href="https://esland-clone.vercel.app" target="_blank">
+        Preview
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
+    <a href="#-getting-started">
+        Getting Started
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
+    <a href="#-commands">
+        Commands
+    </a>
+</div>
 
-## Getting Started
+> [!WARNING]
+> This page is not official. The official page is [**premiosesland.com**](https://premiosesland.com/).
 
-First, run the development server:
+## 🛠️ Stack
+
+- [**Next.js**](https://nextjs.org/) - High-quality web applications with the power of React.
+- [**Typescript**](https://www.typescriptlang.org/) - JavaScript with syntax for types.
+- [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [**tailwindcss-animated**](https://github.com/new-data-services/tailwindcss-animated) - Extended animation utilities for Tailwind CSS.
+
+## 🚀 Getting Started
+
+1. [Fork](https://github.com/hugoriveros18/esland-clone/fork) or clone this repository.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git git@github.com:hugoriveros18/esland-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Access the project:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd esland-clone
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Install the dependencies:
 
-## Learn More
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Traditional way:
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# With turbo:
+npm run devturbo
+```
 
-## Deploy on Vercel
+4. Open [**http://localhost:3000**](http://localhost:3000/) with your browser to see the result 🚀
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧞 Commands
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+|     | Command          | Action                                        |
+| :-- | :--------------- | :-------------------------------------------- |
+| ⚙️  | `dev` | Starts local dev server at `localhost:3000`.  |
+| ⚙️  | `devturbo` | Starts local dev server using turbopack at `localhost:3000`.  |
+| ⚙️  | `build`          | Creates an optimized production build of the application.      |
+| ⚙️  | `start` | Starts the application in production mode at `localhost:3000`.  |
